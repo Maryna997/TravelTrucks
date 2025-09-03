@@ -1,0 +1,35 @@
+.hero {
+  height: 100vh;
+  background-image: url('assets/HeroPic-min.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  color: var(--input);
+  padding-left: 64px;
+}
+
+.title > h1 {
+  font-size: 48px;
+  line-height: 0.67;
+  margin-bottom: 16px;
+}
+
+.title > h2 {
+  font-size: 24px;
+  line-height: 1.33;
+  margin-bottom: 40px;
+}
+
+.title .heroLink {
+  width: 173px;
+  padding: 16px 0;
+}
