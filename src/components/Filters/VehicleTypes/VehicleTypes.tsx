@@ -2,13 +2,13 @@ import { Field } from 'formik';
 import css from './VehicleTypes.module.css';
 
 const vehicleTypes = [
-  { text: 'Van', value: 'panelTruck', icon: '/secondSprite.svg#icon-van' },
+  { text: 'Van', value: 'panelTruck', icon: '/sprite.svg#van' },
   {
     text: 'Fully Integrated',
     value: 'fullyIntegrated',
-    icon: '/secondSprite.svg#icon-fullyIntegrated',
+    icon: '/sprite.svg#fullyIntegrated',
   },
-  { text: 'Alcove', value: 'alcove', icon: '/secondSprite.svg#icon-alcove' },
+  { text: 'Alcove', value: 'alcove', icon: '/sprite.svg#alcove' },
 ];
 
 const VehicleTypes: React.FC = () => {

@@ -11,9 +11,9 @@ import { clearFilters, setFilters } from '../../redux/slices/filtersSlice';
 import { clearCampers } from '../../redux/slices/campersSlice';
 
 import { FiltersState, FormValues } from '../../types/filtersTypes';
-import css from './SidebarFilters.module.css';
+import css from './Filters.module.css';
 
-const SidebarFilters: React.FC = () => {
+const Filters: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
 
   const initialValues: FormValues = {
@@ -87,4 +87,4 @@ const SidebarFilters: React.FC = () => {
   );
 };
 
-export default SidebarFilters;
+export default Filters;
