@@ -5,25 +5,25 @@ import css from './VehicleEquipments.module.css';
 import sprite from '../../../assets/sprite.svg';
 
 const vehicleEquipments = [
-  { text: 'AC', name: 'AC', icon: '../../../assets/sprite.svg#wind' },
+  { text: 'AC', name: 'AC', icon: `${sprite}#wind` },
   {
     text: 'Automatic',
     name: 'transmission',
     value: 'automatic',
-    icon: '../../../assets/sprite.svg#diagram',
+    icon: `${sprite}#diagram`,
   },
-  { text: 'TV', name: 'TV', icon: '../../../assets/sprite.svg#TV' },
-  { text: 'Kitchen', name: 'kitchen', icon: '../../../assets/sprite.svg#cup-hot' },
-  { text: 'Bathroom', name: 'bathroom', icon: '../../../assets/sprite.svg#shower' },
-  { text: 'Microwave', name: 'microwave', icon: '../../../assets/sprite.svg#microwave' },
+  { text: 'TV', name: 'TV', icon: `${sprite}#TV` },
+  { text: 'Kitchen', name: 'kitchen', icon: `${sprite}#cup-hot` },
+  { text: 'Bathroom', name: 'bathroom', icon: `${sprite}#shower` },
+  { text: 'Microwave', name: 'microwave', icon: `${sprite}#microwave` },
   {
     text: 'Refrigerator',
     name: 'refrigerator',
-    icon: '../../../assets/sprite.svg#fridge',
+    icon: `${sprite}#fridge`,
   },
-  { text: 'Radio', name: 'radio', icon: '../../../assets/sprite.svg#radios' },
-  { text: 'Gas', name: 'gas', icon: '../../../assets/sprite.svg#gas-stove' },
-  { text: 'Water', name: 'water', icon: '../../../assets/sprite.svg#water' },
+  { text: 'Radio', name: 'radio', icon: `${sprite}#radios` },
+  { text: 'Gas', name: 'gas', icon: `${sprite}#gas-stove` },
+  { text: 'Water', name: 'water', icon: `${sprite}#water` },
 ];
 
 const VehicleEquipments: React.FC = () => {

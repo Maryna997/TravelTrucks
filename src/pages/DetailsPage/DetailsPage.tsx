@@ -21,7 +21,6 @@ import css from './DetailsPage.module.css';
 import Loader from '../../components/Loader/Loader';
 import ShowError from '../../components/ShowError/ShowError';
 
-import ratingIcons from '../../assets/ratingIcons.svg';
 import sprite from '../../assets/sprite.svg';
 
 const DetailsPage: React.FC = () => {
@@ -67,7 +66,7 @@ const DetailsPage: React.FC = () => {
             <div className={css.reviewsAndLocationInfo}>
               <div className={css.reviewInfoWrap}>
                 <svg width={16} height={16}>
-                  <use href={`${ratingIcons}#icon-Property-1Pressed`}></use>
+                  <use href={`${sprite}#rating-icon-pressed`}></use>
                 </svg>
                 <p className={css.textRating}>
                   {`${camperById?.rating} ${camperById?.reviews.length} Reviews`}
