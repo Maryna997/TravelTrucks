@@ -1,8 +1,8 @@
-# TravelTrack
+# TravelTrucks
 
 ## Project Description
 
-**TravelTrack** is an online platform for choosing and renting camper vans. It allows users to quickly find the right vehicle by applying filters such as type, location, or available features. The aim is to offer a simple and efficient way to search for campers that match every user's needs.
+**TravelTrucks** is an online platform for choosing and renting camper vans. It allows users to quickly find the right vehicle by applying filters such as type, location, or available features. The aim is to offer a simple and efficient way to search for campers that match every user's needs.
 
 ---
 
