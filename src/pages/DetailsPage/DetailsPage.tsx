@@ -21,6 +21,9 @@ import css from './DetailsPage.module.css';
 import Loader from '../../components/Loader/Loader';
 import ShowError from '../../components/ShowError/ShowError';
 
+import ratingIcons from '../../assets/ratingIcons.svg';
+import sprite from '../../assets/sprite.svg';
+
 const DetailsPage: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
 
@@ -64,7 +67,7 @@ const DetailsPage: React.FC = () => {
             <div className={css.reviewsAndLocationInfo}>
               <div className={css.reviewInfoWrap}>
                 <svg width={16} height={16}>
-                  <use href='/ratingIcons/ratingIcons.svg#icon-Property-1Pressed'></use>
+                  <use href={`${ratingIcons}#icon-Property-1Pressed`}></use>
                 </svg>
                 <p className={css.textRating}>
                   {`${camperById?.rating} ${camperById?.reviews.length} Reviews`}
@@ -72,7 +75,7 @@ const DetailsPage: React.FC = () => {
               </div>
               <div className={css.locationInfoWrap}>
                 <svg width={16} height={16} aria-hidden='true'>
-                  <use href='/categories/secondSprite.svg#icon-map'></use>
+                  <use href={`${sprite}#map`}></use>
                 </svg>
                 <p className={css.textLocation}>{camperById?.location}</p>
               </div>
@@ -81,7 +84,7 @@ const DetailsPage: React.FC = () => {
               2
             )}`}</h2>
             <Gallery gallery={camperById?.gallery} />
-            <p className={css.textDescr}>{camperById?.description}</p>
+            <p className={css.textDescription}>{camperById?.description}</p>
           </div>
           <div className={css.tabsWrapper}>
             <button

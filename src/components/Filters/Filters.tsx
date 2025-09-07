@@ -71,7 +71,7 @@ const Filters: React.FC = () => {
   };
 
   return (
-    <div className={css.sidebarWrapper}>
+    <div className={css.wrapper}>
       <Formik initialValues={initialValues} onSubmit={handleSubmit}>
         <Form>
           <Location />

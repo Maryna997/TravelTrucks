@@ -6,6 +6,8 @@ import { selectCampers } from '../../../redux/selectors';
 
 import css from './Location.module.css';
 
+import sprite from '../../../assets/sprite.svg';
+
 const Location: React.FC = () => {
   const locations = useSelector(selectCampers);
 
@@ -79,7 +81,7 @@ const Location: React.FC = () => {
         className={css.textInput}
       />
       <svg width={20} height={20} aria-hidden='true' className={css.mapIcon}>
-        <use href='/assets/sprite.svg#map'></use>
+        <use href={`${sprite}#map`}></use>
       </svg>
 
       {(isFocused || isLocationSelected) && filteredLocations.length > 0 && (

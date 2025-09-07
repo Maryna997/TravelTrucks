@@ -2,26 +2,28 @@ import { Field } from 'formik';
 
 import css from './VehicleEquipments.module.css';
 
+import sprite from '../../../assets/sprite.svg';
+
 const vehicleEquipments = [
-  { text: 'AC', name: 'AC', icon: '/assets/sprite.svg#wind' },
+  { text: 'AC', name: 'AC', icon: '../../../assets/sprite.svg#wind' },
   {
     text: 'Automatic',
     name: 'transmission',
     value: 'automatic',
-    icon: '/assets/sprite.svg#diagram',
+    icon: '../../../assets/sprite.svg#diagram',
   },
-  { text: 'TV', name: 'TV', icon: '/assets/sprite.svg#TV' },
-  { text: 'Kitchen', name: 'kitchen', icon: '/assets/sprite.svg#cup-hot' },
-  { text: 'Bathroom', name: 'bathroom', icon: '/assets/sprite.svg#shower' },
-  { text: 'Microwave', name: 'microwave', icon: '/assets/sprite.svg#microwave' },
+  { text: 'TV', name: 'TV', icon: '../../../assets/sprite.svg#TV' },
+  { text: 'Kitchen', name: 'kitchen', icon: '../../../assets/sprite.svg#cup-hot' },
+  { text: 'Bathroom', name: 'bathroom', icon: '../../../assets/sprite.svg#shower' },
+  { text: 'Microwave', name: 'microwave', icon: '../../../assets/sprite.svg#microwave' },
   {
     text: 'Refrigerator',
     name: 'refrigerator',
-    icon: '/assets/sprite.svg#fridge',
+    icon: '../../../assets/sprite.svg#fridge',
   },
-  { text: 'Radio', name: 'radio', icon: '/assets/sprite.svg#radios' },
-  { text: 'Gas', name: 'gas', icon: '/assets/sprite.svg#gas-stove' },
-  { text: 'Water', name: 'water', icon: '/assets/sprite.svg#water' },
+  { text: 'Radio', name: 'radio', icon: '../../../assets/sprite.svg#radios' },
+  { text: 'Gas', name: 'gas', icon: '../../../assets/sprite.svg#gas-stove' },
+  { text: 'Water', name: 'water', icon: '../../../assets/sprite.svg#water' },
 ];
 
 const VehicleEquipments: React.FC = () => {
@@ -41,7 +43,7 @@ const VehicleEquipments: React.FC = () => {
                 />
                 <div className={css.checkboxCustom}>
                   <svg width={32} hanging={32} className={css.checkboxIcon}>
-                    <use href={`/categories${element.icon}`}></use>
+                    <use href= {`${sprite}${element.icon}`}></use>
                   </svg>
                   <p className={css.checkboxText}>{element.text}</p>
                 </div>

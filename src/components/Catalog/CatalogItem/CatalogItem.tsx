@@ -13,6 +13,10 @@ import { vehicle } from '../../../types/campersTypes';
 
 import css from './CatalogItem.module.css';
 
+import isFavoriteIcon from '../../../assets/isFavoriteIcon.svg';
+import sprite from '../../../assets/sprite.svg';
+import ratingIcons from '../../../assets/ratingIcons.svg';
+
 interface ImageItem {
   thumb: string;
   original: string;
@@ -71,7 +75,7 @@ const CatalogItem: React.FC<CatalogItemProps> = ({ item }) => {
             >
               <svg width={25} height={24}>
                 <use
-                  href={`/assets/isFavoriteIcons.svg#icon-Property-1${clsx(
+                  href={`${isFavoriteIcon}#icon-Property-1${clsx(
                     isFavorite ? 'pressed' : 'Default'
                   )}`}
                 ></use>
@@ -81,7 +85,7 @@ const CatalogItem: React.FC<CatalogItemProps> = ({ item }) => {
           <div className={css.cardInfo}>
             <div>
               <svg width={16} height={16}>
-                <use href='/assets/ratingIcons.svg#icon-Property-1Pressed'></use>
+                <use href={`${ratingIcons}#icon-Property-1Pressed`}></use>
               </svg>
               <p className={css.ratingText}>
                 {ratingInfo(rating, reviews.length)}
@@ -89,7 +93,7 @@ const CatalogItem: React.FC<CatalogItemProps> = ({ item }) => {
             </div>
             <div>
               <svg width={16} height={16} aria-hidden='true'>
-                <use href='/categories/sprite.svg#map'></use>
+                <use href={`${sprite}#map`}></use>
               </svg>
               <p className={css.locationText}>{location}</p>
             </div>

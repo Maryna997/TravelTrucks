@@ -1,5 +1,6 @@
 import { vehicle } from '../../types/campersTypes';
 import css from './Categories.module.css';
+import sprite from '../../assets/sprite.svg';
 
 interface Category {
   href: string;
@@ -12,25 +13,25 @@ type CategoriesObj = {
 
 const Categories: React.FC<{ item: vehicle | null }> = ({ item }) => {
   const categoriesObj: CategoriesObj = {
-    AC: { href: '/assets/sprite.svg#wind', text: 'AC' },
-    TV: { href: '/assets/sprite.svg#TV', text: 'TV' },
+    AC: { href: `${sprite}#wind`, text: 'AC' },
+    TV: { href: `${sprite}#TV`, text: 'TV' },
     transmission: {
-      href: '/assets/sprite.svg#diagram',
+      href: `${sprite}#diagram`,
       text: item?.transmission === 'automatic' ? 'Automatic' : 'Manual',
     },
-    bathroom: { href: '/assets/sprite.svg#shower', text: 'Bathroom' },
-    kitchen: { href: '/assets/sprite.svg#cup-hot', text: 'Kitchen' },
-    radio: { href: '/assets/sprite.svg#radios', text: 'Radio' },
+    bathroom: { href: `${sprite}#shower`, text: 'Bathroom' },
+    kitchen: { href: `${sprite}#cup-hot`, text: 'Kitchen' },
+    radio: { href: `${sprite}#radios`, text: 'Radio' },
     refrigerator: {
-      href: '/assets/sprite.svg#fridge',
+      href: `${sprite}#fridge`,
       text: 'Refrigerator',
     },
     microwave: {
-      href: '/assets/sprite.svg#microwave',
+      href: `${sprite}#microwave`,
       text: 'Microwave',
     },
-    gas: { href: '/assets/sprite.svg#gas-stove', text: 'Gas' },
-    water: { href: '/assets/sprite.svg#water', text: 'Water' },
+    gas: { href: `${sprite}#gas-stove`, text: 'Gas' },
+    water: { href: `${sprite}#water`, text: 'Water' },
   };
 
   return (

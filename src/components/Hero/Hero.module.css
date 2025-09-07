@@ -1,6 +1,6 @@
 .hero {
   height: 100vh;
-  background-image: url('assets/HeroPic-min.png');
+  background-image: url('../../assets/HeroPic-min.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

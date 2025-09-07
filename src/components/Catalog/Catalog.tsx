@@ -34,7 +34,7 @@ const Catalog: React.FC = () => {
   };
 
   return (
-    <div className={css.catalogWrapper}>
+    <div className={css.catalog}>
       <ul className={css.catalogList}>
         {visibleItems.map((item: vehicle) => (
           <CatalogItem item={item} key={uniqId()} />
