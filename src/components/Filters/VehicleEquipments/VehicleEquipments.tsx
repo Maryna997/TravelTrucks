@@ -3,25 +3,25 @@ import { Field } from 'formik';
 import css from './VehicleEquipments.module.css';
 
 const vehicleEquipments = [
-  { text: 'AC', name: 'AC', icon: '/sprite.svg#wind' },
+  { text: 'AC', name: 'AC', icon: '/assets/sprite.svg#wind' },
   {
     text: 'Automatic',
     name: 'transmission',
     value: 'automatic',
-    icon: '/sprite.svg#diagram',
+    icon: '/assets/sprite.svg#diagram',
   },
-  { text: 'TV', name: 'TV', icon: '/sprite.svg#TV' },
-  { text: 'Kitchen', name: 'kitchen', icon: '/sprite.svg#cup-hot' },
-  { text: 'Bathroom', name: 'bathroom', icon: '/sprite.svg#shower' },
-  { text: 'Microwave', name: 'microwave', icon: '/sprite.svg#microwave' },
+  { text: 'TV', name: 'TV', icon: '/assets/sprite.svg#TV' },
+  { text: 'Kitchen', name: 'kitchen', icon: '/assets/sprite.svg#cup-hot' },
+  { text: 'Bathroom', name: 'bathroom', icon: '/assets/sprite.svg#shower' },
+  { text: 'Microwave', name: 'microwave', icon: '/assets/sprite.svg#microwave' },
   {
     text: 'Refrigerator',
     name: 'refrigerator',
-    icon: '/sprite.svg#fridge',
+    icon: '/assets/sprite.svg#fridge',
   },
-  { text: 'Radio', name: 'radio', icon: '/sprite.svg#radios' },
-  { text: 'Gas', name: 'gas', icon: '/sprite.svg#gas-stove' },
-  { text: 'Water', name: 'water', icon: '/sprite.svg#water' },
+  { text: 'Radio', name: 'radio', icon: '/assets/sprite.svg#radios' },
+  { text: 'Gas', name: 'gas', icon: '/assets/sprite.svg#gas-stove' },
+  { text: 'Water', name: 'water', icon: '/assets/sprite.svg#water' },
 ];
 
 const VehicleEquipments: React.FC = () => {

@@ -79,7 +79,7 @@ const Location: React.FC = () => {
         className={css.textInput}
       />
       <svg width={20} height={20} aria-hidden='true' className={css.mapIcon}>
-        <use href='/categories/secondSprite.svg#icon-map'></use>
+        <use href='/assets/sprite.svg#map'></use>
       </svg>
 
       {(isFocused || isLocationSelected) && filteredLocations.length > 0 && (
