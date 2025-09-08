@@ -13,8 +13,6 @@ import { vehicle } from '../../../types/campersTypes';
 
 import css from './CatalogItem.module.css';
 
-import sprite from '../../../assets/sprite.svg';
-
 interface ImageItem {
   thumb: string;
   original: string;
@@ -73,8 +71,8 @@ const CatalogItem: React.FC<CatalogItemProps> = ({ item }) => {
             >
               <svg width={25} height={24}>
                 <use
-                  href={`${sprite}#is-favorite-pressed${clsx(
-                    isFavorite ? 'pressed' : 'Default'
+                  href={`/sprite.svg#is-favorite-${clsx(
+                    isFavorite ? 'pressed' : 'default'
                   )}`}
                 ></use>
               </svg>
@@ -83,7 +81,7 @@ const CatalogItem: React.FC<CatalogItemProps> = ({ item }) => {
           <div className={css.cardInfo}>
             <div>
               <svg width={16} height={16}>
-                <use href={`${sprite}#rating-icon-pressed`}></use>
+                <use href='/sprite.svg#rating-icon-pressed'></use>
               </svg>
               <p className={css.ratingText}>
                 {ratingInfo(rating, reviews.length)}
@@ -91,7 +89,7 @@ const CatalogItem: React.FC<CatalogItemProps> = ({ item }) => {
             </div>
             <div>
               <svg width={16} height={16} aria-hidden='true'>
-                <use href={`${sprite}#map`}></use>
+                <use href='/sprite.svg#map'></use>
               </svg>
               <p className={css.locationText}>{location}</p>
             </div>

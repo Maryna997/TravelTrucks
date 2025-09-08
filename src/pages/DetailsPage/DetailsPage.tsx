@@ -21,8 +21,6 @@ import css from './DetailsPage.module.css';
 import Loader from '../../components/Loader/Loader';
 import ShowError from '../../components/ShowError/ShowError';
 
-import sprite from '../../assets/sprite.svg';
-
 const DetailsPage: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
 
@@ -66,7 +64,7 @@ const DetailsPage: React.FC = () => {
             <div className={css.reviewsAndLocationInfo}>
               <div className={css.reviewInfoWrap}>
                 <svg width={16} height={16}>
-                  <use href={`${sprite}#rating-icon-pressed`}></use>
+                  <use href='/sprite.svg#rating-icon-pressed'></use>
                 </svg>
                 <p className={css.textRating}>
                   {`${camperById?.rating} ${camperById?.reviews.length} Reviews`}
@@ -74,7 +72,7 @@ const DetailsPage: React.FC = () => {
               </div>
               <div className={css.locationInfoWrap}>
                 <svg width={16} height={16} aria-hidden='true'>
-                  <use href={`${sprite}#map`}></use>
+                  <use href='/sprite.svg#map'></use>
                 </svg>
                 <p className={css.textLocation}>{camperById?.location}</p>
               </div>

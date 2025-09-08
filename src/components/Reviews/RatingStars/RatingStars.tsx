@@ -1,6 +1,4 @@
 import css from './RatingStars.module.css';
-
-import sprite from '../../../assets/sprite.svg';
 interface ReviewsType {
   reviewer_name: string;
   reviewer_rating: number;
@@ -14,8 +12,8 @@ interface RatingStarsProps {
 const RatingStars: React.FC<RatingStarsProps> = ({ reviewItem }) => {
   const { reviewer_rating } = reviewItem;
 
-  const FilledStar = `${sprite}#rating-icon-pressed`;
-  const EmptyStar = `${sprite}#rating-icon-default`;
+  const FilledStar = '/sprite.svg#rating-icon-pressed';
+  const EmptyStar = '/sprite.svg#rating-icon-default';
 
   const stars = Array.from({ length: 5 }, (_, index) => (
     <li key={index}>
