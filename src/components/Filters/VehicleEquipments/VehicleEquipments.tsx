@@ -5,7 +5,7 @@ import css from './VehicleEquipments.module.css';
 import sprite from '../../../assets/sprite.svg';
 
 const vehicleEquipments = [
-  { text: 'AC', name: 'AC', icon: `${sprite}#wind` },
+  { text: 'AC', name: 'AC', icon: '../../../assets/sprite.svg#wind' },
   {
     text: 'Automatic',
     name: 'transmission',
